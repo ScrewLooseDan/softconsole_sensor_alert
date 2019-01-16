@@ -53,13 +53,13 @@ class SetDim(object):
         vislux = (data[1] * 256 + data[0]) - (data1[1] * 256 + data1[0])
         visluxStr = str(vislux)
         if vislux < 4:
-           valuestore.SetVal(var, 5)
-           logsupport.Logs.Log("lux under 4: " + visluxStr, severity=ConsoleDebug)
-        elif vislux < 10:
+            valuestore.SetVal(var, 5)
+            logsupport.Logs.Log("lux under 4: " + visluxStr, severity=ConsoleDebug)
+        elif vislux < 15:
             valuestore.SetVal(var, 10)
             logsupport.Logs.Log("lux under 10: " + visluxStr, severity=ConsoleDebug)
         else:
-            valuestore.SetVal(var, 10)
+            valuestore.SetVal(var, 15)
             logsupport.Logs.Log("lux: " + visluxStr, severity=ConsoleDebug)
         # turns off sensor
         bus.write_byte_data(0x39, 0x00 | 0x80, 0x03)

@@ -3,4 +3,8 @@ This module was developed to adjust the screen brightness of the [kevinkahn's so
 
 Requires smbus, installed with:
 - sudo pip3 install smbus-cffi
+- sudo apt install -y i2c-tools  # need to verify this is needed
+- And either on of the following:
+	- sudo raspi-config # enable i2c interface
+	- enable i2c via /boot/config.txt and reboot
 
