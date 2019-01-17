@@ -1,5 +1,6 @@
 # softconsole_sensor_alert
 This module was developed to adjust the screen brightness of the [kevinkahn's softconsole](https://github.com/kevinkahn/softconsole), but it could be used for many other sensors.
+Some of the code borrowed from: https://github.com/ControlEverythingCommunity/TSL2561/blob/master/Python/TSL2561.py
 
 Requires smbus, installed with:
 - sudo pip3 install smbus-cffi
@@ -7,4 +8,3 @@ Requires smbus, installed with:
 - And either on of the following:
 	- sudo raspi-config # enable i2c interface
 	- enable i2c via /boot/config.txt and reboot
-
