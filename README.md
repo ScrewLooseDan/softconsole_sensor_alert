@@ -8,3 +8,13 @@ Requires smbus, installed with:
 - And either on of the following:
 	- sudo raspi-config # enable i2c interface
 	- enable i2c via /boot/config.txt and reboot
+
+Here is a sample of what an alert config might look like:
+```sh
+[Alerts]
+        [[Dimmer]]
+        Type = Periodic
+        Interval = 5 seconds
+        Invoke = SetDim.SensorOut
+        Parameter = 5,10,15,15,40,60
+```
