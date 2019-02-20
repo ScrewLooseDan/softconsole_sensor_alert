@@ -8,6 +8,9 @@ import smbus
 import time   
 
 '''
+Take a look at the following for more instruction:
+    https://github.com/ScrewLooseDan/softconsole_sensor_alert
+Parameters:
 alert.param[0] = DimLevel low/no light
 alert.param[1] = DimLevel medium light
 alert.param[2] = DimLevel high light
