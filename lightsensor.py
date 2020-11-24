@@ -1,6 +1,6 @@
 import config
 import subprocess
-import alerttasks
+import alertsystem.alerttasks as alerttasks
 from logsupport import ConsoleDetail, ConsoleWarning, ConsoleInfo, ConsoleDebug 
 import logsupport
 from stores import valuestore
